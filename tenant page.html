@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bakso Maestronic | Menu & Lokasi</title>
+  <meta name="description" content="Bakso Maestronic menyediakan bakso kuah, goreng, dan bakar dengan bahan berkualitas dan resep otentik." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css file/style.css" />
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a class="brand" href="#">Bakso Maestronic</a>
+      <a class="btn primary" href="#menu">Lihat Menu</a> 
+    </nav>
+  </header>
+    <!-- Hero Section -->
+  <section class="hero hero-full" aria-labelledby="hero-title">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-center">
+        <h1 id="hero-title">Bakso Maestronic</h1>
+        <p class="subtitle">Bakso otentik, kuah kaldu sapi gurih, bikin nagih.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#menu">Lihat Menu</a>
+          <a class="btn ghost" href="#lokasi">Lihat Lokasi</a>
+        </div>
+      </div>
+    </section>
+
+  <main>
+    <!-- Menu Andalan -->
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="section-head">
+        <h2 id="featured-title">Menu Andalan</h2>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <img src="images/bakso-kuah.jpg" alt="Bakso Kuah" loading="lazy">
+          <div class="card-body">
+            <h3>Bakso Kuah</h3>
+            <p>Kuah kaldu sapi gurih, bakso kenyal.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/bakso-goreng.jpg" alt="Bakso Goreng" loading="lazy">
+          <div class="card-body">
+            <h3>Bakso Goreng</h3>
+            <p>Renyah di luar, juicy di dalam.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lokasi & Komentar -->
+    <section class="section two-col" id="lokasi" aria-labelledby="lokasi-title">
+      <div>
+        <h2 id="lokasi-title">Lokasi & Komentar</h2>
+        <div class="map">
+          <div id="map" style="height: 260px; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.08);"></div>
+        </div>
+      </div>
+      <aside class="quote">
+        <figure>
+          <blockquote>“Wah makanannya enak banget, bikin nagih!”</blockquote>
+          <figcaption>— Pelanggan</figcaption>
+        </figure>
+      </aside>
+    </section>
+
+    <!-- Informasi Tenant -->
+    <section class="section" id="tenant-info" aria-labelledby="tenant-title">
+      <h2 id="tenant-title">Informasi Tenant</h2>
+      <p>
+        Bakso Maestronic adalah tenant yang menyediakan berbagai jenis bakso seperti bakso kuah,
+        bakso goreng, dan bakso bakar. Dengan menggunakan bahan-bahan berkualitas dan resep yang
+        otentik, Bakso Maestronic menghadirkan cita rasa yang lezat dan menggugah selera. Cocok untuk
+        dinikmati kapan saja, baik saat makan siang, makan malam, maupun sebagai camilan.
+      </p>
+    </section>
+
+    <!-- Tenant Serupa -->
+    <section class="section" id="similar" aria-labelledby="similar-title">
+      <h2 id="similar-title">Tenant Lain yang Serupa</h2>
+      <div class="grid cards">
+        <article class="card">
+          <img src="images/mie-bakso-mang-ade.jpg" alt="Mie Bakso Mang Ade" loading="lazy">
+          <div class="card-body">
+            <h3>Mie Bakso Mang Ade</h3>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/bakso-pak-kumis.jpg" alt="Bakso Pak Kumis" loading="lazy">
+          <div class="card-body">
+            <h3>Bakso Pak Kumis</h3>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/mie-bakso-kang-dedi.jpg" alt="Mie Bakso Kang Dedi" loading="lazy">
+          <div class="card-body">
+            <h3>Mie Bakso Kang Dedi</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Menu Tersedia -->
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="section-head">
+        <h2 id="menu-title">Menu yang Tersedia</h2>
+        <div class="filters" aria-label="Filter harga">
+          <label>
+            <span>Urutkan:</span>
+            <select aria-label="Urutkan menu">
+              <option>Terbaru</option>
+              <option>Harga terendah</option>
+              <option>Harga tertinggi</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div class="menu-info">
+            <h3>Bakso Kuah</h3>
+            <p>Kuah kaldu sapi gurih dan bakso kenyal.</p>
+          </div>
+          <strong class="price">Rp 15.000</strong>
+        </li>
+        <li class="menu-item">
+          <div class="menu-info">
+            <h3>Bakso Kuah Spesial</h3>
+            <p>Dengan tambahan mie dan sayuran segar.</p>
+          </div>
+          <strong class="price">Rp 18.000</strong>
+        </li>
+        <li class="menu-item">
+          <div class="menu-info">
+            <h3>Bakso Kuah Jumbo</h3>
+            <p>Porsi besar, isi daging melimpah.</p>
+          </div>
+          <strong class="price">Rp 20.000</strong>
+        </li>
+        <li class="menu-item">
+          <div class="menu-info">
+            <h3>Bakso Kuah Pedas</h3>
+            <p>Sambal khas Maestronic.</p>
+          </div>
+          <strong class="price">Rp 17.000</strong>
+        </li>
+        <li class="menu-item">
+          <div class="menu-info">
+            <h3>Bakso Kuah Original</h3>
+            <p>Cita rasa otentik.</p>
+          </div>
+          <strong class="price">Rp 16.000</strong>
+        </li>
+      </ul>
+
+        <div class="tabs">
+          <div class="tab-group">
+            <input checked="" id="tab1" name="tab" value="1" type="radio" />
+            <label for="tab1">
+             <span>1</span>
+            </label>
+          </div>
+          <div class="tab-group">
+            <input id="tab2" name="tab" value="2" type="radio" />
+            <label for="tab2">
+              <span>2</span>
+            </label>
+          </div>
+          <div class="tab-group">
+            <input id="tab3" name="tab" value="3" type="radio" />
+            <label for="tab3">
+              <span>3</span>
+            </label>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Bakso Maestronic</p>
+  </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="scriptmaps.js" defer></script>
+</body>
+</html>

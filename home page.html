@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Jelajahi makanan populer di daerah kamu" />
+    <title>Beranda - Jelajahi Makanan</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="daharinn.css" />
+  </head>
+  <body>
+    <main class="beranda">
+      <header class="header">
+        <nav class="navigation" role="navigation" aria-label="Main navigation">
+          <div class="logo-container">
+            <img class="logo-background" src="img/ellipse-20.svg" alt="" />
+            <div class="logo-icon-wrapper">
+              <div class="logo-icon" role="img" aria-label="Shop icon"></div>
+            </div>
+          </div>
+          <div class="nav-button-wrapper">
+            <img class="nav-button-left" src="img/ellipse-1.svg" alt="" />
+            <img class="nav-button-background" src="img/rectangle-13.svg" alt="" />
+            <button class="nav-button" type="button" aria-label="Jelajahi">
+              <span class="nav-button-text">jelajahi</span>
+            </button>
+            <img class="nav-button-right" src="img/ellipse-22.svg" alt="" />
+          </div>
+          <div class="search-container">
+            <img class="search-background" src="img/rectangle-14.svg" alt="" />
+            <label for="search-input" class="visually-hidden">Cari makanan</label>
+            <input
+              type="search"
+              id="search-input"
+              class="search-input"
+              placeholder="cari makanan..."
+              aria-label="Cari makanan"
+            />
+          </div>
+          <div class="user-profile">
+            <img class="user-profile-background" src="img/ellipse-13.svg" alt="" />
+            <button class="user-profile-button" type="button" aria-label="User profile">
+              <img class="user-profile-icon" src="img/user.svg" alt="" />
+            </button>
+          </div>
+        </nav>
+      </header>
+      <section class="food-categories" aria-labelledby="categories-heading">
+        <h1 id="categories-heading" class="section-heading">LAGI MAU MAKAN APA NIH?</h1>
+        <div class="categories-list" role="list">
+          <button class="category-item" type="button" aria-label="Kategori makanan 1">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 2">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 3">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 4">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 5">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 6">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 7">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 8">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 9">
+            <span class="category-icon"></span>
+          </button>
+          <button class="category-item" type="button" aria-label="Kategori makanan 10">
+            <span class="category-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="popular-foods" aria-labelledby="popular-heading">
+        <h2 id="popular-heading" class="section-heading">COBAIN NIH, LAGI POPULAR LOH DI DAERAH KAMU!</h2>
+        <div class="popular-foods-carousel">
+          <img class="carousel-image" src="img/group-2.png" alt="Makanan populer" />
+        </div>
+      </section>
+      <section class="story-section" aria-labelledby="story-heading">
+        <h2 id="story-heading" class="story-heading">CERITA DIBALIK RASA</h2>
+        <article class="story-card">
+          <img class="story-image" src="img/group-3.png" alt="Cerita makanan" />
+          <div class="story-text-lines">
+            <div class="story-text-line"></div>
+            <div class="story-text-line"></div>
+            <div class="story-text-line"></div>
+          </div>
+          <div class="story-pagination" role="navigation" aria-label="Story pagination">
+            <button class="pagination-dot" type="button" aria-label="Story 1" aria-current="true"></button>
+            <button class="pagination-dot" type="button" aria-label="Story 2"></button>
+            <button class="pagination-dot" type="button" aria-label="Story 3"></button>
+          </div>
+        </article>
+      </section>
+      <div class="decorative-elements" aria-hidden="true">
+        <img class="decorative-vector" src="img/image.svg" alt="" />
+        <img class="decorative-vector-2" src="img/vector.svg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count Up Cash SVG</title>
+  <style>
+    .money-container {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .money-container svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+      transition: transform 0.2s;
+    }
+    .money-container svg.pop {
+      transform: scale(1.3);
+    }
+  </style>
+</head>
+<body>
+
+<div class="money-container" id="moneyContainer">
+  <!-- Awal 1 logo -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-cash" viewBox="0 0 16 16">
+    <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+    <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+  </svg>
+</div>
+
+<script>
+  const target = 4; // total logo yang mau muncul
+  const container = document.getElementById('moneyContainer');
+  let count = 1;
+
+  const interval = setInterval(() => {
+    if(count >= target) {
+      clearInterval(interval);
+      return;
+    }
+    count++;
+
+    // buat elemen SVG baru
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("xmlns", svgNS);
+    svg.setAttribute("width", "16");
+    svg.setAttribute("height", "16");
+    svg.setAttribute("fill", "white");
+    svg.setAttribute("class", "bi bi-cash");
+    svg.setAttribute("viewBox", "0 0 16 16");
+    
+    svg.innerHTML = `
+      <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+      <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+    `;
+
+    container.appendChild(svg);
+
+    // animasi pop
+    svg.classList.add('pop');
+    setTimeout(() => svg.classList.remove('pop'), 200);
+
+  }, 500);
+</script>
+
+</body>
+</html>

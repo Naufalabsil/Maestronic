@@ -1,0 +1,24 @@
+    button.nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #ff568e;
+      border: none;
+      color: white;
+      font-size: 20px;
+      padding: 10px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button.nav:hover {
+      background: #ff2f7a;
+    }
+
+    #prevBtn {
+      left: 10px;;
+    }
+    #nextBtn {
+      right: 10px;
+    }
