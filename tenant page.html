@@ -14,14 +14,17 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css file/style.css" />
+  <link rel="stylesheet" href="Tenant lain/tenantlaincss.css" />
 </head>
 <body>
 
   <!-- Header & Navbar -->
   <header class="site-header">
     <nav class="navbar" aria-label="Navigasi utama">
-      <a class="brand" href="#">Bakso Maestronic</a>
-      <a class="btn primary" href="#menu">Lihat Menu</a> 
+      <a class="brand" href="#">
+        <img src="css file/images/logo.png" alt="Dahar.In Beranda" height="40">
+        </a>
+      <a class="btn primary" href="#menu">Liha Menu</a> 
     </nav>
   </header>
     <!-- Hero Section -->
@@ -91,26 +94,61 @@
     <!-- Tenant Serupa -->
     <section class="section" id="similar" aria-labelledby="similar-title">
       <h2 id="similar-title">Tenant Lain yang Serupa</h2>
-      <div class="grid cards">
-        <article class="card">
-          <img src="images/mie-bakso-mang-ade.jpg" alt="Mie Bakso Mang Ade" loading="lazy">
-          <div class="card-body">
-            <h3>Mie Bakso Mang Ade</h3>
+      <div class="slider-container">
+        <button id="prevBtn" class="nav"><</button>
+        <div class="cardtlain-wrapper" id="cardtlainWrapper">
+          <div class="cardtlain">
+            <span class="price">💰</span>
+            <div class="rating" data-rating="4.5"></div>
+            <img src="https://picsum.photos/300?random=1">
+            <h3>Bakso Mang Ade</h3>
+            <p>Bakso urat legendaris dengan kuah gurih menggoda. dengan bumbu lauk mandi kekaaddedlaporan indonesia raya meredasdsdasdsaddddddddddddddddddddd
+            </p>
           </div>
-        </article>
-        <article class="card">
-          <img src="images/bakso-pak-kumis.jpg" alt="Bakso Pak Kumis" loading="lazy">
-          <div class="card-body">
-            <h3>Bakso Pak Kumis</h3>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/mie-bakso-kang-dedi.jpg" alt="Mie Bakso Kang Dedi" loading="lazy">
-          <div class="card-body">
-            <h3>Mie Bakso Kang Dedi</h3>
-          </div>
-        </article>
+        <div class="cardtlain">
+          <span class="price" data-price="4"></span>
+          <div class="rating" data-rating="4.5"></div>
+          <img src="https://picsum.photos/300?random=1">
+          <h3>Bakso Mang Ade</h3>
+          <p>Bakso urat legendaris dengan kuah gurih menggoda.</p>
+        </div>
+        <div class="cardtlain">
+          <span class="price" data-price="2"></span>
+          <div class="rating" data-rating="4.5"></div>
+          <img src="https://picsum.photos/300?random=1">
+          <h3>Bakso Mang Ade</h3>
+          <p>Bakso urat legendaris dengan kuah gurih menggoda.</p>
+        </div>
+        <div class="cardtlain">
+          <span class="price" data-price="3"></span>
+          <div class="rating" data-rating="4.5"></div>
+          <img src="https://picsum.photos/300?random=1">
+          <h3>Bakso Mang Ade</h3>
+          <p>Bakso urat legendaris dengan kuah gurih menggoda.</p>
+        </div>
+        <div class="cardtlain">
+          <span class="price" data-price="1"></span>
+          <div class="rating" data-rating="4.5"></div>
+          <img src="https://picsum.photos/300?random=1">
+          <h3>Bakso Mang Ade</h3>
+          <p>Bakso urat legendaris dengan kuah gurih menggoda.</p>
+        </div>
+        <div class="cardtlain">
+          <span class="price" data-price="4"></span>
+          <div class="rating" data-rating="4.5"></div>
+          <img src="https://picsum.photos/300?random=1">
+          <h3>Bakso Mang Ade</h3>
+          <p>Bakso urat legendaris dengan kuah gurih menggoda.</p>
+        </div>
+        <div class="cardtlain">
+          <span class="price" data-price="4"></span>
+          <div class="rating" data-rating="4.5"></div>
+          <img src="https://picsum.photos/300?random=1">
+          <h3>Bakso Mang Ade</h3>
+          <p>Bakso urat legendaris dengan kuah gurih menggoda.</p>
+        </div>
       </div>
+      <button id="nextBtn" class="nav">></button>
     </section>
 
     <!-- Menu Tersedia -->
@@ -197,5 +235,6 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="scriptmaps.js" defer></script>
+<script src="Tenant lain/tenantlain.js" defer></script>
 </body>
 </html>
