@@ -2,12 +2,7 @@ body {
   font-family: "Radley", serif;
   font-weight: 400;
   font-style: normal;
-  background: radial-gradient(circle at center, #f5f5f5, #ddd);
   height: 300vh;
-}
-.navbar .brand img{
-  height: 100px;
-  width: auto;
 }
 .slider-container {
   position: relative;
