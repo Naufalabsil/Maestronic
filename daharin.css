@@ -289,7 +289,7 @@ body {
 
 .card-wrapper {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   transition: transform 0.5s ease;
 
 }
