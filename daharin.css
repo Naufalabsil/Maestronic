@@ -134,7 +134,10 @@ body {
 }
 
 .rectangle-daharin{
+  position: relative;
     background-color: #9e9ea7;
+    text-align: center;
+
     height: 400;
     border-radius: 20px;
 }
@@ -153,6 +156,20 @@ body {
 .category-section{
     margin:0;
     
+}
+.rectangle-daharin .group {
+  z-index: 99;
+  position: absolute;
+  top: 30px; /* atur jarak dari atas */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  width: 80%;
+  max-width: 600px;
+
 }
 
 .teks-content1{
@@ -272,16 +289,17 @@ body {
 
 .card-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   transition: transform 0.5s ease;
+
 }
 
 .card {
-  flex: 0 0 calc(20% - 20px);
+  flex: 0 0 calc(33% - 20px);
   position: relative;
   border-radius: 12px;
   width: 100%;
-  height: 400;
+  height: 300px;
   max-width: 1000px;
   overflow: hidden;
   cursor: pointer;
@@ -295,8 +313,8 @@ body {
 }
 
 .card img {
-  width: 500%;
-  height: 500;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
   display: block;
   filter: brightness(70%);
