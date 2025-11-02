@@ -11,12 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-polyline-smooth@1.0.0/dist/leaflet.polyline.smooth.min.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="css file/style.css" />
   <link rel="stylesheet" href="Tenant lain/tenantlaincss.css" />
 </head>
 <body>
+<script>
+    const TENANT_NAME = "🍜 Bakso Maestronic";
+    const TENANT_KOOR = [-6.91773, 107.61091];
+</script>
 
   <!-- Header & Navbar -->
   <header class="site-header">
@@ -68,8 +72,12 @@
     <section class="section two-col" id="lokasi" aria-labelledby="lokasi-title">
       <div>
         <h2 id="lokasi-title">Lokasi & Komentar</h2>
-        <div class="map">
+        <div class="map-wrapper">
           <div id="map" style="height: 260px; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.08);"></div>
+          <div id="rute">
+            <span id="distance">0</span>KM<br>
+            <span id="duration">0</span>Menit
+          </div>
         </div>
       </div>
       <aside class="quote">
@@ -266,8 +274,9 @@
   <footer class="site-footer">
     <p>© 2025 Bakso Maestronic</p>
   </footer>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="scriptmaps.js" defer></script>
 <script src="Tenant lain/tenantlain.js" defer></script>
 <script src="scriptumum.js" defer></script>
