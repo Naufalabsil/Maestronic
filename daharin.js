@@ -120,3 +120,4 @@ if(window.matchMedia("(max-width: 1100px)").matches){
 }else{
   animateDesktopCards(); // Desktop
 }
+
