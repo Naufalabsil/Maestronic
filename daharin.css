@@ -5,6 +5,7 @@ html{
 body {
     background-color: #f3e2e2;
     margin: 0;
+    overflow-x: hidden;
 
 }
 
@@ -41,12 +42,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background: #7A0000; /* hilangin background putihnya */
   border-radius: 100px;
   padding: 0;
+  padding-right: 50px;
   position: relative; /* bukan fixed atau absolute */
   box-shadow: none; /* gak perlu bayangan di sini */
+  left: 70px;
 }
 
 .navigation ul {
@@ -54,7 +56,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: -940px;
+  gap: -20px;
 
 }
 .nav a {
@@ -67,7 +69,7 @@ body {
   position: relative;
   cursor: pointer;
   list-style: none;
-  width: 120px;
+  width: 140px;
   height: 40px;
   z-index: 1;
   margin-right: -2px;
@@ -174,7 +176,7 @@ body {
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator {
-  left: 0;
+  left: 40px;
 }
 .navigation ul li:nth-child(2).active ~ .indicator {
   left: 140px; /* 100px width + 40px gap */
@@ -189,17 +191,11 @@ body {
   left: 560px;
 }
 
-
-
-
-
 .logo img {
-  height: 60px;
+  height: 120px;
   object-fit: contain;
 }
 
-
-/* From Uiverse.io by alexruix */ 
 .group {
  display: flex;
  line-height: 28px;
